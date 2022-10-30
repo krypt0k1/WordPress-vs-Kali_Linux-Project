@@ -1,4 +1,4 @@
-WordPress vs Kali WK7 & 8 - Codepath Cybersecurity 
+WordPress vs Kali - Codepath Cybersecurity 
 
 The goal of this assignment was to create a WordPress server to find and exploit vulnerabilities. Through Vagrant I succesfully created a working server with an with IP of 192.168.33.100 which was reachable by my Kali Linux machine. 
 
