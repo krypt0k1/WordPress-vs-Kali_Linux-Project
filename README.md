@@ -48,7 +48,7 @@ The following requested revelead all available services on the server.
 
 
 
-After trial an error with some services I noticed that wp.getUserBlogs could be fed username and password parameters that could possibly exploited for user authentication. There were no time-outs for any number of tries made. 
+After trial and error with some services I noticed that wp.getUserBlogs could be fed username and password parameters that could possibly exploited for user authentication. There were no time-outs for any number of tries made. 
 ![image](https://user-images.githubusercontent.com/111711434/198855961-63031c51-8535-4628-ba90-a3c202615dc8.png)
 
 The GIF below demonstrates how XML-RPC can be exploited to obtain user credentials. Admin credentials are confirmed by the <name>(user) as isAdmin and the boolean check set to 1.  
