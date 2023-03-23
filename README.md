@@ -1,4 +1,4 @@
-WordPress vs Kali - Codepath Cybersecurity 
+# WordPress vs Kali - Codepath Cybersecurity
 
 The goal of this assignment was to create a WordPress server to find and exploit vulnerabilities. Through Vagrant I succesfully created a working server with an with IP of 192.168.33.100 which was reachable by my Kali Linux machine. 
 
@@ -12,7 +12,7 @@ and others
 
 Admin rights were previously granted by Codepath. After loggin into the admin panel I started tinkering with some of the settings to see how WordPress works. I noticed that there was a section to create users to which I created 2 users, Tom Riddle & Harry Potter. Before logging out I tested for any Insecure Direct Object Reference(IDOR)on url http://wpdistillery.vm/wp-login.php?, came unsuccessful. While researching I found two WordPress vulnerability scanners, WPScan & WPSekku. 
 
-User Enumeration Exploit :
+## User Enumeration Exploit :
 
 WPScan was used with the following commands an d parameters:
 
@@ -27,7 +27,7 @@ The scan returned several vulnerabilities and at the bottom it found the users I
 ![User Enum](https://user-images.githubusercontent.com/111711434/198854367-7f60c115-e869-47f0-ab40-86406e318ec3.gif)
 
 
-XML-RPC Exploit 
+## XML-RPC Exploit 
 
 After performing the scan, I noticed that XML-RPC was left enabled for this WordPress server. 
 ![image](https://user-images.githubusercontent.com/111711434/198854816-36c9caf2-84a0-4573-827f-5f92b422871d.png)
