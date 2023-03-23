@@ -39,19 +39,21 @@ From there I loaded up up Burp Suite and sent the GET request to Repeater and ch
 
 ![image](https://user-images.githubusercontent.com/111711434/198855024-7b25fc7f-3748-480c-ad30-c624c0165163.png)
 
-XMLcan be inserted onto the POST request as seen below.
+XML can be inserted onto the POST request as seen below.
 ![image](https://user-images.githubusercontent.com/111711434/198856171-279cb7a1-7441-43da-9bbd-3efff3f0650d.png)
 
 
-The following requested revelead all available services on the server. 
+The following requested revelead all available services on the server: 
 ![XML-RPC Exploit Services](https://user-images.githubusercontent.com/111711434/198855198-b15a7104-d735-4854-af41-838b11763d39.gif)
 
 
 
 After trial and error with some services I noticed that wp.getUserBlogs could be fed username and password parameters that could possibly exploited for user authentication. There were no time-outs for any number of tries made. 
+
 ![image](https://user-images.githubusercontent.com/111711434/198855961-63031c51-8535-4628-ba90-a3c202615dc8.png)
 
 The GIF below demonstrates how XML-RPC can be exploited to obtain user credentials. Admin credentials are confirmed by the <name>(user) as isAdmin and the boolean check set to 1.  
+
 ![XML-RPC Exploit Admin ](https://user-images.githubusercontent.com/111711434/198855985-ed866247-f082-4678-8ccf-de34baa6976f.gif)
 
 
